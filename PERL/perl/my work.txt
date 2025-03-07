@@ -1,0 +1,1 @@
+I worked as IP verification Engineer and my role in project DDR5PLL as I have to write checkers and assertions for some features of project.
