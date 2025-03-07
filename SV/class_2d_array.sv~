@@ -1,0 +1,74 @@
+class name;
+
+int a[][];//2d dynamic
+int b[$][];//2d queue dynamic
+int c[int][int];//2d associative
+
+////////////////////////////////////////////////function for dynamic array
+function void name_dynamic();
+        a = new[3];
+    
+    foreach(a[i])
+      a[i] = new[2];
+    
+    foreach(a[i,j]) a[i][j] = $random;
+    
+    foreach(a[i,j])   
+      $display("a[%0p][%0p] = %0p",i,j, a[i][j]);      
+endfunction 
+    
+
+/////////////////////////////////////////////////function for queue array
+function void name_queue();
+        for (int i = 0; i < 5; i++) begin
+        b[j] = new[3];
+
+        b[i][j] = $urandom_range(1, 100);
+      end
+    end
+    
+    foreach(b[i,j])   
+      $display("b[%0p][%0p] = %0p",i,j, b[i][j]);      
+endfunction
+
+
+/////////////////////////////////////////////////////function for associative array      
+function void name_associative();
+     
+    for (int i = 0; i < 5; i++) begin
+      for (int j = 0; j < 5; j++) begin
+        c[i][j] = $urandom_range(1, 100);
+      end
+    end
+
+  
+    foreach (c[i, j]) begin
+      $display("c[%0d][%0d] = %0d", i, j, c[i][j]);
+    end
+endfunction
+
+
+endclass
+
+
+
+module test;
+
+name n;
+
+initial begin
+	n=new();
+   n.name_dynamic();
+    //n.name_queue();
+   // n.name_associative();
+
+       
+
+end
+
+
+endmodule
+
+
+
+
