@@ -26,7 +26,7 @@ module test;
 prime_number pri;
 
 initial
-	//////////sushanki
+
   begin
     pri=new;
     void'(pri.randomize);
